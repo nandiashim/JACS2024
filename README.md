@@ -53,4 +53,4 @@ A folder named 'histogram' contains a script to extract the emission spectra. Yo
 
 ## How to Obtain QCFF/PI Program
 
-To download the QCFF/PI program, contact ztchu@usc.edu.
+To avail and download the QCFF/PI program, contact ztchu@usc.edu.
