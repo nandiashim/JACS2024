@@ -35,8 +35,7 @@ The QCFF/PI also requires a user configuration interaction list of groups of PI 
 2. Peptide PI atoms
 3. Phenolate PI atoms
 
-[image](https://github.com/nandiashim/JACS2024/assets/85494700/942e1be4-5237-40a1-9efc-fd47ec51178a)
-
+![image](https://github.com/nandiashim/JACS2024/assets/85494700/b757adab-2f3e-475a-906d-1f8a51ac1d6e)
 
 Make sure to configure this list accordingly to properly set up your simulation.
 
