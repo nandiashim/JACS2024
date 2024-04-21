@@ -1,12 +1,10 @@
 # JACS2024
 Supporting Information: This repository contains the input files and control parameter needed for QCFF/PI calcuation.
 
-Here's the updated README.md formatted file for GitHub with your additional information:
-
 ```markdown
 # QCFF/PI Simulation Setup
 
-To run QCFF/PI, you need a few control parameters. Below are the parameters for one of the studied systems, the 'phenolate' ion in RLuc8.
+To run QCFF/PI, a few sets of control parameters are required. Below are the parameters for one of the studied systems, the 'phenolate' ion in RLuc8.
 
 ## Control Parameters (qcff_opt file)
 
@@ -35,17 +33,24 @@ Refer to the QCFF/PI documentation for more details on these parameters.
 
 ## QCFF/PI Parameters (qcff_parm1 file)
 
-The QCFF/PI also requires a user configuration interaction list of groups of PI atoms in the molecules. This file is named `user_ci_list`. For the phenolate case, there are 5 groups:
+The QCFF/PI also requires a user configuration interaction list of groups of PI atoms in the molecules. This file is named `user_ci_list`. For the phenolate case, there are 5 groups (see image below):
 1. Three benzene PI atoms
 2. Peptide PI atoms
 3. Phenolate PI atoms
 
+[image](https://github.com/nandiashim/JACS2024/assets/85494700/942e1be4-5237-40a1-9efc-fd47ec51178a)
+
+
 Make sure to configure this list accordingly to properly set up your simulation.
 
-## Executable Scripts
+## Additional Requirements
 
 To run the QCFF/PI program, you need two executable script files:
 - `xqcffpi_Npi`
 - `molaris_hpc9.15_huge`
+
+A folder named 'histogram' contains a script to extract the emission spectra. You can refer to `grep_histogram.com` for the procedure to obtain the spectra.
+
+## How to Obtain QCFF/PI Program
 
 To download the QCFF/PI program, contact ztchu@usc.edu.
