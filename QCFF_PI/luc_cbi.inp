@@ -1,0 +1,31 @@
+RLUC8_PHEN_DH.pdb
+enzymix
+  pre_enz
+        ionres 119 147 143 159 221 267 166 188 226 271 284 141 310
+   end
+   ac
+      reg1_res 310                                      
+      map_lambda 1.0
+      map_pf 1
+      md_parm       
+#         gas_phase 1
+#         qcff_writeout_only                    !supress detailed molaris write-out
+         nsteps  20000
+         temperature 300
+         ss 0.0005
+          ex_w_center 5038
+          induce 1
+          indforce 1
+#         fix_region 1
+         rest_fq 1000
+         qcff                                  !calling qcffpi from molaris
+            script  ./qcffpi.spt            !script file for running qcffpi
+            qcff_in  ATOM.IN             !automatically created by molaris
+            qcff_out FORCE.OUT            !automatically created by qcff/pi
+            qcff_interval 10
+         end
+      end
+   end
+end
+end
+
